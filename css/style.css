@@ -1,8 +1,10 @@
 :root {
     --bg: #3c3b3b;
-    --text: #dddddd;
+    --text: #d6d6d6;
     --accent: #ec8c58;
-    --muted: #545457;
+    --selection: #ae653c;
+    --selection-inverse: #545457;
+    --muted: #8f8d8b;
     --section: #2b2927;
     --skills: #bf7043;
     --shadow: 0 5px 15px rgba(236,140,88,0.2);
@@ -16,17 +18,17 @@
 }
 
 *::selection {
-    background: var(--accent);
+    background: var(--selection);
 }
 *::-moz-selection {
-    background: var(--accent);
+    background: var(--selection);
 }
 
 a::selection, li::selection, h2::selection {
-    background: var(--muted);
+    background: var(--selection-inverse);
 }
 a::-moz-selection, li::-moz-selection, h2::-moz-selection {
-    background: var(--muted);
+    background: var(--selection-inverse);
 }
 
 a {
