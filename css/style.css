@@ -9,6 +9,13 @@
     --transform-transition: transform .3s ease;
 }
 
+::selection {
+    background: var(--accent);
+}
+::-moz-selection {
+    background: var(--accent);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
