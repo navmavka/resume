@@ -50,15 +50,36 @@ section {
     margin: 2rem auto;
     padding: 1.5rem;
     background: var(--section);
-    border-radius: 12px;
+    border-radius: 0.75rem;
     box-shadow: var(--shadow);
 }
 
-a, header p, header h1, section, ul.skills-list li {
+#about {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem
+}
+
+#about img {
+    max-width: 200px;
+    border-radius: 0.75rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.container img {
+    max-width: 200px;
+}
+
+a, header p, header h1, section, .container p, section h2, #about img, .item, ul.skills-list li {
     transition: var(--transform-transition);
 }
 
-a:hover, header p:hover, header h1:hover, section:hover, ul.skills-list li:hover {
+a:hover, header p:hover, header h1:hover, section:hover, .container p:hover, section h2:hover, #about img:hover, .item:hover, ul.skills-list li:hover {
     transform: translateY(-2px);
 }
 
