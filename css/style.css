@@ -152,4 +152,11 @@ footer {
     #about img {
         display: none;
     }
+    a, header p, header h1, section, .container p, section h2, #about img, .item, ul.skills-list li {
+        transition: unset;
+    }
+
+    header p:hover, header h1:hover, section:hover, .container p:hover, section h2:hover, #about img:hover, .item:hover, ul.skills-list li:hover {
+        transform: unset;
+    }
 }
